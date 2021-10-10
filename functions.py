@@ -122,9 +122,13 @@ def get_breath_type(df, scaler, clusterer):
 
     grouped = df.groupby("breath_id")
 
-    breaths = grouped.mean().drop(["id", "time_step", "pressure"], 1).reset_index()
+    breaths = (
+        grouped.mean()
+        .drop(columns=["id", "time_step", "pressure"], errors="ignore")
+        .reset_index()
+    )
 
-    breaths = breaths.drop("cluster", 1, errors="ignore")
+    breaths = breaths.drop(columns="cluster", errors="ignore")
 
     breaths_scaled = scaler.transform(breaths)
 
@@ -217,11 +221,11 @@ class BreathClusterer:
 
         breaths = (
             grouped.mean()
-            .drop(["id", "time_step", "pressure"], 1, errors="ignore")
+            .drop(columns=["id", "time_step", "pressure"], errors="ignore")
             .reset_index()
         )
 
-        breaths = breaths.drop("cluster", 1, errors="ignore")
+        breaths = breaths.drop(columns="cluster", errors="ignore")
 
         return breaths
 
