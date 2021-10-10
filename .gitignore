@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 /data
 /testes.ipynb
+/model_breath_type.ipynb

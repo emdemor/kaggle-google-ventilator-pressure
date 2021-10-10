@@ -1,0 +1,5 @@
+outs:
+- md5: 3ab99151d00880b845a7cc7f34b0c223
+  size: 30396
+  path: model_breath_type.ipynb
+  isexec: true
