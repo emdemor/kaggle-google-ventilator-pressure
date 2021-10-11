@@ -132,3 +132,4 @@ dmypy.json
 /model_breath_type.ipynb
 /model_stability_pressure.ipynb
 /model_oscillations.ipynb
+/model_base_pressure.ipynb
