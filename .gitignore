@@ -131,3 +131,4 @@ dmypy.json
 /testes.ipynb
 /model_breath_type.ipynb
 /model_stability_pressure.ipynb
+/model_oscillations.ipynb

@@ -1,0 +1,5 @@
+outs:
+- md5: 2fc6cce186ff4259c15cc8532d3165ae
+  size: 270853
+  path: model_oscillations.ipynb
+  isexec: true
