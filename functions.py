@@ -191,12 +191,16 @@ def preprocessing(df_model):
     teste["RC"] = teste["C"] * teste["R"]
     teste["R/C"] = teste["R"] / teste["C"]
     teste["C/R"] = teste["C"] / teste["R"]
-    teste["R"] = teste["R"].astype("category")
-    teste["C"] = teste["C"].astype("category")
-    teste["RC"] = teste["RC"].astype("category")
-    teste["R/C"] = teste["R/C"].astype("category")
-    teste["C/R"] = teste["C/R"].astype("category")
+    #teste["R"] = teste["R"].astype("category")
+    #teste["C"] = teste["C"].astype("category")
+    #teste["RC"] = teste["RC"].astype("category")
+    #teste["R/C"] = teste["R/C"].astype("category")
+    #teste["C/R"] = teste["C/R"].astype("category")
 
+
+    # for col in teste.dtypes[teste.dtypes == "category"].index:
+    #     teste = pd.concat([teste.drop(columns=col,errors='ignore'),pd.get_dummies(teste[col], prefix=col)], axis=1)
+        
     return teste
 
 
