@@ -1,5 +1,5 @@
 outs:
-- md5: d9a3091cca3057256abf6cd580320af0
-  size: 93766
+- md5: 1beb6b9ceba0175bca2908d6b21c1f9e
+  size: 27750
   path: model_pressure_level_1.ipynb
   isexec: true
